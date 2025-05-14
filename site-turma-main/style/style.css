@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1024;
+  color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #2a1a3d;
+  padding: 15px 0;
+  border-bottom: 1px solid #4b2f6c;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #b184f4;
+}
+
+/* Seção Sobre */
+.sobre {
+  background: linear-gradient(180deg, #1c112a 0%, #2a1a3d 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sobre .container {
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(20, 10, 30, 0.8);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(146, 110, 196, 0.2);
+}
+
+.sobre h1 {
+  font-size: 2.8em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 25px;
+  color: #b184f4;
+}
+
+.sobre p {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.8;
+  color: #d3c1ec;
+  margin-bottom: 20px;
+}
+.sobre-imagem {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(177, 132, 244, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.sobre-imagem img:hover {
+  transform: scale(1.03);
+}
