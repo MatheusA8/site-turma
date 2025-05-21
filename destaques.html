@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seção Estilo Epic Games</title>
+  <title>Seção jogos</title>
   <link rel="stylesheet" href="../site-turma/destaques.css">
 </head>
 <body>
@@ -11,39 +11,76 @@
   <section class="store-section">
     <h2 class="section-title">Jogos em Destaque</h2>
     <div class="product-grid">
+
       <div class="product-card">
         <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610" alt="Jogo 1">
         <div class="product-info">
-          <h3>Nome do Jogo 1</h3>
+          <h3>Terraria</h3>
           <button>Comprar</button>
         </div>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/400x250?text=Jogo+2" alt="Jogo 2">
+        <img src="../site-turma/image/celeste.avif" alt="Jogo 2">
         <div class="product-info">
-          <h3>Nome do Jogo 2</h3>
+          <h3>Celeste</h3>
           <button>Comprar</button>
         </div>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/400x250?text=Jogo+3" alt="Jogo 3">
+        <img src="../site-turma/image/balatro2.avif" alt="Jogo 3">
         <div class="product-info">
-          <h3>Nome do Jogo 3</h3>
+          <h3>Balatro</h3>
           <button>Comprar</button>
         </div>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/400x250?text=Jogo+4" alt="Jogo 4">
+        <img src="../site-turma/image/ultrakill.jpg" alt="Jogo 4">
         <div class="product-info">
-          <h3>Nome do Jogo 4</h3>
+          <h3>Ultrakill</h3>
           <button>Comprar</button>
         </div>
       </div>
+
     </div>
   </section>
+  <div class="background-overlay"></div>
+
+  <script>
+    const fundosPorJogo = {
+      'Terraria': 'https://files.meiobit.com/wp-content/uploads/2022/08/terraria.jpg',
+      'Celeste': 'https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252',
+      'Balatro': 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000072051/a7baf09e1da434bae373120750e39cb7d134c116ca8a4b81bc07666ecab9b326',
+      'Ultrakill': 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1229490/capsule_616x353.jpg?t=1740623813'
+    };
+  
+    const cards = document.querySelectorAll('.product-card');
+    const overlay = document.querySelector('.background-overlay');
+  
+    cards.forEach(card => {
+      const nomeJogo = card.querySelector('h3').textContent;
+  
+      card.addEventListener('mouseenter', () => {
+        const imagemFundo = fundosPorJogo[nomeJogo];
+        if (imagemFundo) {
+          overlay.style.backgroundImage = `url(${imagemFundo})`;
+        }
+      });
+  
+      card.addEventListener('mouseleave', () => {
+        overlay.style.backgroundImage = '';
+        overlay.style.backgroundColor = '#2a1a3d'; // cor de fundo original
+      });
+    });
+  </script>
+  
+  
+  
 
 </body>
 </html>
+
+
+
