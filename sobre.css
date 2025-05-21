@@ -1,0 +1,308 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1024;
+    color: #ffffff;
+}
+
+
+/* Seção Sobre */
+.sobre {
+    background: linear-gradient(180deg, #1c112a 0%, #2a1a3d 100%);
+    padding: 80px 20px;
+    text-align: center;
+    height: 1000px;
+}
+
+.sobre .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(20, 10, 30, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(146, 110, 196, 0.2);
+}
+
+.sobre h1 {
+    font-size: 2.8em;
+    font-family: monospace;
+    margin-bottom: 25px;
+    color: #b184f4;
+}
+
+.sobre p {
+    font-size: 18px;
+    font-family: monospace;
+    line-height: 1.8;
+    color: #d3c1ec;
+    margin-bottom: 20px;
+}
+
+.sobre-imagem {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(177, 132, 244, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.sobre-imagem img:hover {
+    transform: scale(1.03);
+}
+
+.explore {
+    background:
+        linear-gradient(180deg, rgba(26, 16, 36, 0.9), rgba(42, 26, 61, 0.9)),
+        url('image/jogo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #d3c1ec;
+    padding: 100px 20px;
+    height: 885px;
+    position: relative;
+    overflow: hidden;
+}
+
+.explore-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.explore-content h2 {
+    font-size: 60px;
+    color: #b184f4;
+    font-family: monospace;
+    margin-top: 190px;
+    margin-bottom: 20px;
+}
+
+.explore-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: monospace;
+    color: #d3c1ec;
+}
+
+.btn-explore {
+    font-weight: bold;
+    color: #b184f4;
+    text-decoration: none;
+    border: 2px solid #b184f4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-explore:hover {
+    background: #b184f4;
+    color: #1a1024;
+}
+
+.features {
+  background: linear-gradient(180deg, rgba(26, 16, 36, 0.9), rgba(42, 26, 61, 0.9));
+  color: #d3c1ec;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  height: 900px;
+  
+}
+
+.features-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(20, 10, 30, 0.85);
+  box-shadow: 0 0 20px rgba(146, 110, 196, 0.2);
+  padding: 40px 30px;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.features-content h2 {
+  font-size: 40px;
+  color: #b184f4;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.features-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: monospace;
+  margin-bottom: 30px;
+  color: #d3c1ec;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: monospace;
+}
+
+.features-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #e3d1ff;
+}
+
+.btn-explore {
+  font-weight: bold;
+  color: #b184f4;
+  text-decoration: none;
+  border: 2px solid #b184f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-explore:hover {
+  background: #b184f4;
+  color: #1a1024;
+}
+
+.community {
+  background: linear-gradient(180deg, rgba(26, 16, 36, 0.9), rgba(42, 26, 61, 0.9)),
+              url('image/manifoldgarden.jpg'); /* Substitua pelo caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #d3c1ec;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  height: 900px;
+}
+
+.community-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 40px 30px;
+  border-radius: 16px;
+}
+
+.community-content h2 {
+  font-size: 50px;
+  color: #b184f4;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.community-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: monospace;
+  margin-bottom: 30px;
+  color: #d3c1ec;
+}
+
+.community-highlight {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #e3d1ff;
+  font-family: monospace;
+}
+
+.btn-explore {
+  font-weight: bold;
+  color: #b184f4;
+  text-decoration: none;
+  border: 2px solid #b184f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.btn-explore:hover {
+  background: #b184f4;
+  color: #1a1024;
+}
+
+.support {
+  background: linear-gradient(180deg, rgba(26, 16, 36, 0.9), rgba(42, 26, 61, 0.9));
+  color: #d3c1ec;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  height: 1000px;
+}
+
+.support-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 40px 30px;
+  border-radius: 16px;
+}
+
+.support-content h2 {
+  font-size: 60px;
+  color: #b184f4;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.support-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: monospace;
+  margin-bottom: 30px;
+  color: #d3c1ec;
+}
+
+.support-item {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #e3d1ff;
+  font-family: monospace;
+}
+
+.btn-explore {
+  font-weight: bold;
+  color: #b184f4;
+  text-decoration: none;
+  border: 2px solid #b184f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.btn-explore:hover {
+  background: #b184f4;
+  color: #1a1024;
+}
+.support-item strong {
+  color: #c49eff;
+}
