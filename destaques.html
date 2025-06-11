@@ -19,60 +19,74 @@
       background-color: #121021; /* fundo escuro só para contraste */
       color: #d3c1ec;
     }
+    
 
     header {
-      background-color: rgb(79, 53, 119);
-      height: 120px;
-    }
+  background-color:  rgb(79, 53, 119);
+  height: 120px;
+}
 
-    .display {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.display{
+  display: flex;
+  justify-content: center;
+} 
+Header ul {
 
-    header ul {
-      display: flex;
-      margin-left: 50px;
-      margin-top: 50px;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      padding: 0;
-    }
-
-    header ul li {
-      margin-left: 100px;
-      margin-bottom: 35px;
-      list-style: none;
-    }
-
-    header ul li a {
-      text-decoration: none;
-      font-family: monospace;
-      color: rgb(21, 9, 31);
-      font-size: 20px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-
-    header ul li a:hover {
-      color: rgb(203, 163, 255);
-    }
-
-    .logo {
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .logo h1 {
-      color: rgb(33, 15, 48);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 60px;
-      margin-left: 10px;
-      margin-top: 20px;
-    }
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    
+    
+}
+Header ul li{
+    margin-left: 100px;
+    margin-bottom: 35px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    font-family: monospace;
+    color: rgb(62, 22, 95);
+    font-size: 20px;
+    font-weight: 700;
+    transition: text-shadow 0.8s ease-in-out; /* Transição suave */
+    
+}
+header ul li a:hover{
+  text-shadow:
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px rgb(106, 33, 202),
+  0 0 30px rgb(208, 158, 255),
+  0 0 40px rgb(234, 150, 255),
+  0 0 50px rgb(226, 80, 255),
+  0 0 60px #0ff;
+    
+}
+.logo {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.logo h1{
+    color: rgb(33, 15, 48);
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgb(106, 33, 202),
+    0 0 30px rgb(208, 158, 255),
+    0 0 40px rgb(234, 150, 255),
+    0 0 50px rgb(226, 80, 255),
+    0 0 60px #0ff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+    
 
     footer {
       height: 100px;
@@ -339,10 +353,10 @@
       <ul>
         <li><a href="../site-turma/destaques.html">INICIO</a></li>
         <li><a href="../site-turma/sobre.html">SOBRE</a></li>
-        <li><a href="">EXPLORAR</a></li>
-        <li><a href="../site-turma/sobre.html">PROJETOS</a></li>
-        <li><a href="../site-turma/sobre.html">COMUNIDADE</a></li>
-        <li><a href="../site-turma/sobre.html">SEGURANÇA E SUPORTE</a></li>
+        <li><a href="../site-turma/sobre.html#explorar">EXPLORAR</a></li>
+        <li><a href="../site-turma/sobre.html#projetos">PROJETOS</a></li>
+        <li><a href="../site-turma/sobre.html#comunidade">COMUNIDADE</a></li>
+        <li><a href="../site-turma/sobre.html#seguranca">SEGURANÇA E SUPORTE</a></li>
       </ul>
     </div>
   </header>
@@ -406,7 +420,7 @@
       </div>
 
       <div class="product-card">
-        <img src="../site-turma-main/image/celeste.jpg" alt="Jogo 2" />
+        <img src="../site-turma/image/celeste.jpg" alt="Jogo 2" />
         <div class="product-info">
           <h3>Celeste</h3>
           <button>Comprar</button>
@@ -414,7 +428,7 @@
       </div>
 
       <div class="product-card">
-        <img src="../site-turma-main/image/balatro2.avif" alt="Jogo 3" />
+        <img src="../site-turma/image/balatro2.avif" alt="Jogo 3" />
         <div class="product-info">
           <h3>Balatro</h3>
           <button>Comprar</button>
@@ -422,7 +436,7 @@
       </div>
 
       <div class="product-card">
-        <img src="../site-turma-main/image/ultrakill.jpg" alt="Jogo 4" />
+        <img src="../site-turma/image/ultrakill.jpg" alt="Jogo 4" />
         <div class="product-info">
           <h3>Ultrakill</h3>
           <button>Comprar</button>
@@ -488,9 +502,9 @@
 
   <footer>
     <ul>
-      <li><a href="">Suporte</a></li>
-      <li><a href="">Sobre</a></li>
-      <li><a href="">Fale Conosco</a></li>
+      <li><a href="../site-turma/sobre.html#seguranca">Suporte</a></li>
+      <li><a href="../site-turma/sobre.html">Sobre</a></li>
+      <li><a href="../site-turma/sobre.html#comunidade">Fale Conosco</a></li>
     </ul>
   </footer>
 
