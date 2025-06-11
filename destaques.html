@@ -1,19 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Seção jogos</title>
-  <link rel="stylesheet" href="../site-turma/destaques.css">
+  <link rel="stylesheet" href="../site-turma-main/destaques.css" />
+  <style>
+    /* Rodapé */
+
+      body {
+    /*area de tirar margem*/
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  }
+
+
+  header {
+    background-color:  rgb(79, 53, 119);
+    height: 120px;
+  }
+  
+  .display{
+    display: flex;
+    justify-content: center;
+  } 
+  Header ul {
+  
+      display: flex;
+      margin-left: 50px;
+      margin-top: 50px;
+      justify-content: center;
+      text-align: center; 
+      align-items: center;
+      
+  }
+  Header ul li{
+      margin-left: 100px;
+      margin-bottom: 35px;
+      list-style: none;
+  }
+  header ul li a{
+      text-decoration: none;
+      font-family: monospace;
+      color: rgb(21, 9, 31);
+      font-size: 20px;
+      font-weight: 700;
+      transition: color 0.3s;
+      
+  }
+  header ul li a:hover{
+      color: rgb(203, 163, 255);
+      
+  }
+  .logo {
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+  }
+  .logo h1{
+      color: rgb(33, 15, 48);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 60px;
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+
+    footer {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 129px;
+    }
+
+    footer ul {
+      display: flex;
+      gap: 100px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: #b184f4;
+      font-weight: 700;
+      font-size: 18px;
+      font-family: monospace;
+      transition: color 0.3s;
+    }
+
+    footer ul li a:hover {
+      color: #d3c1ec;
+    }
+
+    /* Contato */
+    .contact-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      color: #d3c1ec;
+      font-family: monospace;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .contact-info,
+    .contact-form {
+      background: #1a0f30;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 0 10px rgba(177, 132, 244, 0.3);
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+      margin-top: 0;
+      color: #b184f4;
+    }
+
+    .contact-info p a {
+      color: #b184f4;
+      text-decoration: none;
+    }
+
+    .contact-info p a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .contact-form button {
+      background-color: #0078f2;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #005fc1;
+    }
+
+    .mensagem-enviada {
+      color: #b184f4;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
+      <header>
 
+        <div class="display">
+        <div class="logo">
+          <h1>LUDIX</h1>
+        </div>
+        <ul>
+    
+          <li><a href="../site-turma/destaques.html">INICIO</a></li>
+          <li><a href="../site-turma/sobre.html">SOBRE</a></li>
+          <li><a href="">EXPLORAR</a></li>
+          <li><a href="../site-turma/sobre.html">PROJETOS</a></li>
+          <li><a href="../site-turma/sobre.html">COMUNIDADE</a></li>
+          <li><a href="../site-turma/sobre.html">SEGURANÇA E SUPORTE</a></li>
+    
+        </ul>
+    
+        </div>
+    
+      </header>
   <section class="store-section">
     <h2 class="section-title">Jogos em Destaque</h2>
     <div class="product-grid">
+      <div class="product-card">
+        <img
+          src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/capsule_616x353.jpg"
+          alt="Jogo 5"
+        />
+        <div class="product-info">
+          <h3>Portal 2</h3>
+          <button>Comprar</button>
+        </div>
+      </div>
 
       <div class="product-card">
-        <img src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610" alt="Jogo 1">
+        <img
+          src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_616x353.jpg"
+          alt="Jogo 6"
+        />
+        <div class="product-info">
+          <h3>Dota 2</h3>
+          <button>Comprar</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_616x353.jpg"
+          alt="Jogo 7"
+        />
+        <div class="product-info">
+          <h3>GTA V</h3>
+          <button>Comprar</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg"
+          alt="Jogo 8"
+        />
+        <div class="product-info">
+          <h3>CS:GO</h3>
+          <button>Comprar</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610"
+          alt="Jogo 1"
+        />
         <div class="product-info">
           <h3>Terraria</h3>
           <button>Comprar</button>
@@ -21,7 +260,7 @@
       </div>
 
       <div class="product-card">
-        <img src="../site-turma/image/celeste.avif" alt="Jogo 2">
+        <img src="../site-turma-main/image/celeste.jpg" alt="Jogo 2" />
         <div class="product-info">
           <h3>Celeste</h3>
           <button>Comprar</button>
@@ -29,7 +268,7 @@
       </div>
 
       <div class="product-card">
-        <img src="../site-turma/image/balatro2.avif" alt="Jogo 3">
+        <img src="../site-turma-main/image/balatro2.avif" alt="Jogo 3" />
         <div class="product-info">
           <h3>Balatro</h3>
           <button>Comprar</button>
@@ -37,50 +276,117 @@
       </div>
 
       <div class="product-card">
-        <img src="../site-turma/image/ultrakill.jpg" alt="Jogo 4">
+        <img src="../site-turma-main/image/ultrakill.jpg" alt="Jogo 4" />
         <div class="product-info">
           <h3>Ultrakill</h3>
           <button>Comprar</button>
         </div>
       </div>
-
     </div>
   </section>
   <div class="background-overlay"></div>
 
+  <div class="buy-modal" id="buyModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
+    <div class="buy-box" style="background:#1a0f30; padding:20px; border-radius:10px; width:300px; position:relative;">
+      <button
+        class="close-buy-box"
+        id="closeBuyBox"
+        style="position:absolute; top:10px; right:10px; background:none; border:none; color:#b184f4; font-size:18px; cursor:pointer;"
+      >
+        X
+      </button>
+      <h3 id="buyGameTitle">Jogo Selecionado</h3>
+      <div class="buy-actions" style="margin-top:15px;">
+        <button class="buy-btn" style="margin-right:10px; padding:10px 15px; background:#b184f4; color:#fff; border:none; border-radius:5px; cursor:pointer;">Adicionar ao Carrinho</button>
+        <button class="buy-btn buy-now" style="padding:10px 15px; background:#0078f2; color:#fff; border:none; border-radius:5px; cursor:pointer;">Comprar Agora</button>
+        <div class="payment-methods" style="margin-top:15px; color:#d3c1ec;">
+          <p>Pagamento:</p>
+          <label><input type="radio" name="pagamento" checked /> Cartão</label>
+          <label><input type="radio" name="pagamento" /> Pix</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <h2>Contato / Localização</h2>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Informações de Contato</h3>
+        <p><strong>E-mail:</strong> <a href="mailto:ldx@gmail.com">ldx@gmail.com</a></p>
+        <p><strong>Telefone:</strong> <a href="tel:+12345678">(42) 1234-5678</a></p>
+        <p>
+          <strong>Endereço:</strong> Rua Coronel Emílio Gomes, 3 - Centro,
+          Irati - PR, CEP: 84500-054
+        </p>
+        <p><strong>Referência:</strong> Ao lado da Prefeitura Municipal de Irati</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.382429046145!2d-50.6467756!3d-25.4283855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f8e8fbe9154d67%3A0x16e456b9f433f515!2sCol%C3%A9gio%20Sesi%20Irati!5e0!3m2!1spt-BR!2sbr!4v1692405812444"
+          width="100%"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-form">
+        <h3>Fale Conosco</h3>
+        <form id="formContato">
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu email" required />
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+          <p class="mensagem-enviada" style="display: none">
+            Mensagem enviada com sucesso!
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li><a href="#">Página Inicial</a></li>
+      <li><a href="#">Jogos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </footer>
+
   <script>
-    const fundosPorJogo = {
-      'Terraria': 'https://files.meiobit.com/wp-content/uploads/2022/08/terraria.jpg',
-      'Celeste': 'https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252',
-      'Balatro': 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000072051/a7baf09e1da434bae373120750e39cb7d134c116ca8a4b81bc07666ecab9b326',
-      'Ultrakill': 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1229490/capsule_616x353.jpg?t=1740623813'
-    };
-  
-    const cards = document.querySelectorAll('.product-card');
-    const overlay = document.querySelector('.background-overlay');
-  
-    cards.forEach(card => {
-      const nomeJogo = card.querySelector('h3').textContent;
-  
-      card.addEventListener('mouseenter', () => {
-        const imagemFundo = fundosPorJogo[nomeJogo];
-        if (imagemFundo) {
-          overlay.style.backgroundImage = `url(${imagemFundo})`;
-        }
-      });
-  
-      card.addEventListener('mouseleave', () => {
-        overlay.style.backgroundImage = '';
-        overlay.style.backgroundColor = '#2a1a3d'; // cor de fundo original
+    // Formulário - mostrar mensagem e limpar
+    document.querySelector('#formContato').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const msg = document.querySelector('.mensagem-enviada');
+      msg.style.display = 'block';
+
+      this.reset();
+
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 3000);
+    });
+
+    // Modal de compra (exemplo simples)
+    const buyButtons = document.querySelectorAll('.product-info button');
+    const buyModal = document.getElementById('buyModal');
+    const buyGameTitle = document.getElementById('buyGameTitle');
+    const closeBuyBox = document.getElementById('closeBuyBox');
+
+    buyButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const gameTitle = button.parentElement.querySelector('h3').textContent;
+        buyGameTitle.textContent = `Comprar: ${gameTitle}`;
+        buyModal.style.display = 'flex';
       });
     });
-  </script>
-  
-  
-  
 
+    closeBuyBox.addEventListener('click', () => {
+      buyModal.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
-
-
-
